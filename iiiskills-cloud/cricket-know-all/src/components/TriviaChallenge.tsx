@@ -3,8 +3,7 @@
  */
 
 import React from 'react';
-import { colors, typography, spacing, borderRadius, shadows } from '../styles/theme';
-import Card from '../components/Card';
+import { colors, typography, spacing, borderRadius } from '../styles/theme';
 import Button from '../components/Button';
 
 export const TriviaChallenge: React.FC = () => {
