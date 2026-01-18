@@ -72,6 +72,7 @@ export const HeroSection: React.FC = () => {
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: typography.sizes['4xl'],
+    flexDirection: 'column',
   };
 
   const decorativeCircleStyles: React.CSSProperties = {
@@ -107,14 +108,14 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
         <div style={imageContainerStyles}>
-          <div style={playerCardStyles}>
-            👩‍🦰
+          <div style={playerCardStyles} role="img" aria-label="Harmanpreet Kaur, Indian Women's Cricket Captain">
+            <span aria-hidden="true">👩‍🦰</span>
             <div style={{ fontSize: typography.sizes.sm, marginTop: spacing.md }}>
               Harmanpreet
             </div>
           </div>
-          <div style={{ ...playerCardStyles, marginTop: spacing['2xl'] }}>
-            👨
+          <div style={{ ...playerCardStyles, marginTop: spacing['2xl'] }} role="img" aria-label="Virat Kohli, Indian Cricket Legend">
+            <span aria-hidden="true">👨</span>
             <div style={{ fontSize: typography.sizes.sm, marginTop: spacing.md }}>
               Virat Kohli
             </div>

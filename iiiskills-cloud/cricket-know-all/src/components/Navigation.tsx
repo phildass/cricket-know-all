@@ -59,6 +59,8 @@ export const Navigation: React.FC<NavigationProps> = ({ currentRoute, onNavigate
     backgroundColor: isActive ? colors.navyAlpha60 : 'transparent',
     color: isActive ? colors.electricGold : colors.white,
     minWidth: '60px',
+    border: 'none',
+    background: isActive ? colors.navyAlpha60 : 'transparent',
   });
 
   const iconStyles: React.CSSProperties = {
@@ -77,14 +79,16 @@ export const Navigation: React.FC<NavigationProps> = ({ currentRoute, onNavigate
         {navItems.map((item) => {
           const isActive = currentRoute === item.route;
           return (
-            <div
+            <button
               key={item.route}
               style={itemStyles(isActive)}
               onClick={() => onNavigate(item.route)}
+              aria-label={`Navigate to ${item.label}`}
+              aria-current={isActive ? 'page' : undefined}
             >
               <span style={iconStyles}>{item.icon}</span>
               <span style={labelStyles}>{item.label}</span>
-            </div>
+            </button>
           );
         })}
       </nav>

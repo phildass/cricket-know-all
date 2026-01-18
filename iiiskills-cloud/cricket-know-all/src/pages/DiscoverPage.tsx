@@ -93,6 +93,7 @@ export const DiscoverPage: React.FC = () => {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           style={searchInputStyles}
+          aria-label="Search for cricket players, matches, and statistics"
         />
       </div>
 
