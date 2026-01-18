@@ -23,7 +23,7 @@ function App() {
 
   const renderPage = () => {
     if (showLanding) {
-      return <LandingPage />;
+      return <LandingPage onEnterApp={() => setShowLanding(false)} />;
     }
 
     switch (currentRoute) {
