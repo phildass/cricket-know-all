@@ -128,7 +128,7 @@ iiiskills-cloud/cricket-know-all/
 
 ### Prerequisites
 
-- Node.js 18+ and npm/yarn
+- Node.js 18+ and Yarn
 - Modern web browser
 - (Optional) PostgreSQL for database
 
@@ -146,12 +146,12 @@ iiiskills-cloud/cricket-know-all/
 
 3. **Install dependencies**
    ```bash
-   npm install
+   yarn install
    ```
 
 4. **Run the development server**
    ```bash
-   npm run dev
+   yarn dev
    ```
 
 5. **Open your browser**
@@ -160,7 +160,7 @@ iiiskills-cloud/cricket-know-all/
 ### Build for Production
 
 ```bash
-npm run build
+yarn build
 ```
 
 The built files will be in the `dist/` directory.
@@ -275,13 +275,13 @@ The app is designed to integrate with:
 
 ```bash
 # Type checking
-npm run type-check
+yarn type-check
 
 # Linting
-npm run lint
+yarn lint
 
 # Build test
-npm run build
+yarn build
 ```
 
 ---
