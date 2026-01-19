@@ -1,0 +1,23 @@
+/**
+ * Cricket Know All - Main Entry Point
+ */
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { globalStyles } from './styles/global';
+
+// Inject global styles
+const styleElement = document.createElement('style');
+styleElement.textContent = globalStyles;
+document.head.appendChild(styleElement);
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
