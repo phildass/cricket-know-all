@@ -178,7 +178,7 @@ services/
 
 ### Build Process
 ```bash
-npm run build
+yarn build
 ```
 Output: Optimized static files in `dist/`
 
